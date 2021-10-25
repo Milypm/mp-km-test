@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-div {
+  width: 70%;
+  margin: 50px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 21px;
+  font-family: 'Rubik', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header h1 {
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: rgb(117, 110, 110);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0 30px 0;
+}
+
+.main p {
+  font-size: 23px;
+}
+
+.items-section {
+  width: 80%;
+  display: grid;
+  grid-template-areas: "div-item div-item";
+  row-gap: 30px;
+  column-gap: 30px;
+  margin: 20px auto;
+}
+
+.div-item {
+  border: 1px solid rgb(218, 208, 208);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+.div-item img {
+  width: 200px;
+  height: 200px;
+}
+
+.sensorial-ball img {
+  width: 140px;
+  height: 140px;
+  margin: 25px 0;
+}
+
+.teaser-ball img {
+  width: 160px;
+  height: 160px;
+  margin: 15px 0;
+}
+
+.rope-margin img {
+  margin: 20px 0;
+}
+
+.div-item p {
+  font-size: 18px;
+}
+
+.cost {
+  margin-left: 15px;
+  color: rgb(117, 110, 110);
+}
+
+.add-button {
+  padding: 10px 15px;
+  background: rgb(168, 162, 162);
+  color: #fff;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.add-button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(218, 208, 208);
+  border-radius: 15px;
+  padding: 40px 0;
+}
+
+.footer-info {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.form {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.email-input {
+  width: 300px;
+  height: 30px;
+  margin-left: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+
+.form button {
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  background: rgb(168, 162, 162);
+  color: #fff;
+  border-radius: 10px;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.footer-analytics {
+  margin-top: 40px;
+}
