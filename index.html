@@ -73,6 +73,15 @@
   </div>
   <script type="text/javascript">
     window._kmq.push(['record', 'Test'])
+    document.querySelector('form').addEventListener('submit', e => {
+      e.preventDefault();
+        
+      const email = e.target.querySelector('.email-input').value;
+        
+      if (/@/.test(email) && window._kmq) {
+        window._kmq.push(['identify', email]);
+      }
+    })
   </script>
 </body>
 </html>
