@@ -85,10 +85,10 @@
     Array.from(document.querySelectorAll('.add-button')).forEach(link => {
       link.addEventListener('click', e => {
         e.preventDefault()
-        
+
         if (window._kmq) {
-          const cost = e.target.parent.querySelector('.cost').innerText;
-          
+          const cost = e.target.parentNode.querySelector('.cost').innerText;
+
           window._kmq.push(['record', 'Add to cart', { price: cost }]);
         }
       })
