@@ -75,12 +75,23 @@
     window._kmq.push(['record', 'Test'])
     document.querySelector('form').addEventListener('submit', e => {
       e.preventDefault();
-        
+
       const email = e.target.querySelector('.email-input').value;
-        
+
       if (/@/.test(email) && window._kmq) {
         window._kmq.push(['identify', email]);
       }
+    })
+    Array.from(document.querySelectorAll('.add-button')).forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault()
+        
+        if (window._kmq) {
+          const cost = e.target.parent.querySelector('.cost').innerText;
+          
+          window._kmq.push(['record', 'Add to cart', { price: cost }]);
+        }
+      })
     })
   </script>
 </body>
